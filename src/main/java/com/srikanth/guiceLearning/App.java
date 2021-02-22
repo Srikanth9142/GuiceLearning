@@ -16,5 +16,6 @@ public class App
         Injector injector = Guice.createInjector(new CommunicationModule());
         Communication myCommunication = injector.getInstance(Communication.class);
         myCommunication.sendTestMessage("Communication Device1");
+        myCommunication.sendSMS("SMS Device1");
     }
 }
